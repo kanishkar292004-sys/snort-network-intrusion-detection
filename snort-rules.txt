@@ -1,0 +1,5 @@
+# Custom Snort Rules for MCA Project
+
+alert icmp any any -> any any (msg:"ICMP Ping Detected"; sid:1000001;)
+alert tcp any any -> any 80 (msg:"HTTP Traffic Detected"; sid:1000002;)
+alert tcp any any -> any 22 (msg:"SSH Connection Attempt"; sid:1000003;)
